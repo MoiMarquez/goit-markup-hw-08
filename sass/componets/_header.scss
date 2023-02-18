@@ -1,0 +1,117 @@
+@use "../utils/variables.scss" as color;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 80px;
+
+
+        &__links {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px 80px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+        }
+
+        &__page {
+            color: color.$grey-color;
+        }
+
+        &__page:hover::after {
+            content: "";
+            display: block;
+            width: 100%;
+            transform: translateY(28px);
+            border: 1px solid color.$highlight;
+            border-radius: 2px;
+            transition: 250ms cubic-bezier(0.2, 0, 0.2, 1);
+            visibility: visible;
+        }
+
+        &__logo {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            color: color.$highlight;
+        }
+    }
+}
+
+.header__contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+    &__email {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+
+        color: color.$grey-color;
+        text-decoration: none;
+    }
+
+    &__phone {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+
+        color: color.$grey-color;
+        text-decoration: none;
+    }
+}
+
+.icon-envelope {
+    width: 15px;
+    height: 15px;
+    fill: color.$grey-color;
+}
+
+.header__contact__email:hover,
+.icon-envelope:hover,
+.header__contact__email:focus,
+.icon-envelope:focus {
+    color: color.$highlight;
+    fill: color.$highlight;
+}
+
+.icon-phone {
+    fill: color.$grey-color;
+    width: 15px;
+    height: 15px;
+}
+
+.header__contact__phone:hover,
+.icon-phone:hover,
+.header__contact__phone:focus,
+.icon-phone:focus {
+    fill: color.$highlight;
+    color: color.$highlight;
+}

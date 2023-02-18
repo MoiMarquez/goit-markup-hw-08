@@ -1,0 +1,153 @@
+@use "../utils/variables.scss" as color;
+
+.separator::before {
+    content: "";
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    border: 1px solid #ececec;
+}
+
+.portfolio {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    &__button-list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 12px;
+        padding: 94px 0 50px 0;
+    }
+
+    &__button-item {
+        &__child {
+            background-color: color.$grey-bg;
+            border-radius: 4px;
+            border: 0;
+            padding: 0 20px 0 20px;
+
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+
+            &:hover,
+            :focus {
+                cursor: pointer;
+                background-color: color.$highlight;
+                color: color.$white-color;
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+                border: 0;
+            }
+        }
+    }
+
+
+}
+
+.portfolio-card {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 82px;
+
+    &__items {
+        position: relative;
+        width: 370px;
+        border: 1px solid #eeeeee;
+
+        &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &__transition-box {
+        position: relative;
+        width: 370px;
+        height: 294px;
+        overflow: hidden;
+    }
+
+    &__overflow-box {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translatey(100%);
+        transition: transform 250ms ease;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: color.$highlight;
+        opacity: 90%;
+
+        // &__items {
+        //     &:hover {
+
+        //         &__overflow-box,
+        //         &__transition-box {
+        //             &:hover {
+        //                 &__overflow-box {
+        //                     transform: translateY(0%);
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+    }
+
+    &__description {
+        width: 322px;
+        height: 168px;
+        left: 271px;
+        top: 326px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: justify;
+        letter-spacing: 0.03em;
+        color: color.$white-color;
+        margin: 63px 24px;
+        padding: 0px;
+    }
+
+    &__tittle {
+        text-align: left;
+        text-decoration: none;
+        padding: 20px 24px 4px 24px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+
+        letter-spacing: 0.06em;
+
+        color: color.$black-color;
+    }
+
+    &__filter-text {
+        text-align: left;
+        text-decoration: none;
+        padding: 0px 24px 20px 24px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+
+        letter-spacing: 0.03em;
+
+        color: color.$grey-color;
+    }
+
+}
+
+.portfolio-card__items:hover .portfolio-card__overflow-box,
+.portfolio-card__transition-box:hover .portfolio-card__overflow-box {
+    transform: translateY(0%);
+}

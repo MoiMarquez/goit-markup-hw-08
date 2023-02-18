@@ -1,0 +1,62 @@
+@use "../utils/variables.scss" as color;
+@use "../utils/variables.scss" as var;
+
+.us {
+    padding: var.$inner-padding;
+    padding-bottom: 0;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__tittle {
+        text-align: center;
+        padding-bottom: 50px;
+        color: color.$black-color;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 94px;
+    }
+
+    &__items {
+        position: relative;
+    }
+
+    &__background {
+        position: absolute;
+        background-color: color.$black-color;
+        opacity: 80%;
+        top: 78%;
+        left: 0px;
+        width: 370px;
+        height: 70px;
+        text-align: center;
+        padding-top: 27px;
+    }
+
+    &__background-tittle {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: color.$white-color;
+        opacity: 100%;
+    }
+}

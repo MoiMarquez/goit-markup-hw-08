@@ -1,0 +1,197 @@
+@use "../utils/variables.scss" as color;
+@use "../utils/variables.scss" as var;
+
+.footer {
+    background: color.$bg-color;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 47px;
+        max-width: 1200px;
+    }
+
+
+    &__logo {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+
+        letter-spacing: 0.03em;
+        text-decoration: none;
+
+        color: color.$highlight;
+    }
+
+    &__address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+
+        letter-spacing: 0.03em;
+        color: color.$white-color;
+    }
+
+    &__contact {
+        letter-spacing: 0.03em;
+        text-decoration: none;
+
+        color: rgba(255, 255, 255, 0.6);
+
+        &:hover,
+        :focus {
+            color: color.$highlight;
+        }
+    }
+
+    &__middle-aside {
+        padding-left: 70px;
+    }
+
+    &__tittle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 20px;
+
+        color: color.$white-color;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        margin-left: 0px;
+    }
+
+    &__items {
+        position: relative;
+        height: 44px;
+        width: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+
+        &:hover,
+        :focus {
+            background-color: color.$highlight;
+            cursor: pointer;
+        }
+    }
+
+    &__icon-ig {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$white-color;
+    }
+
+    &__icon-twitter {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$white-color;
+    }
+
+    &__icon-fb {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$white-color;
+    }
+
+    &__icon-linkedin {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$white-color;
+    }
+
+    &__right-aside {
+        margin: 12px 0px 0px 93px;
+    }
+
+    &__right-tittle {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+
+        color: color.$white-color;
+    }
+
+    &__right-div {
+        display: inline;
+        width: 580px;
+        height: auto;
+    }
+
+    &__input {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding: 15px 0px 15px 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        background-color: var(--bg-color);
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+        padding: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: color.$highlight;
+        color: color.$white-color;
+        border-radius: 4px;
+        border: 0;
+    }
+
+    &__sub-text {
+        display: inline;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        /* identical to box height, or 188% */
+
+    }
+
+    &__icon-telegram {
+        width: 24px;
+        height: 24px;
+        margin: 13px, 28px, 13px, 8px;
+        fill: color.$white-color;
+    }
+}

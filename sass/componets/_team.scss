@@ -1,0 +1,150 @@
+@use "../utils/variables.scss" as color;
+@use "../utils/variables.scss" as var;
+
+.team {
+    padding: var.$inner-padding;
+    padding-bottom: 94px;
+    background-color: color.$grey-bg;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__tittle {
+        text-align: center;
+        color: color.$black-color;
+        padding-bottom: 50px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 37px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__items {
+        background-color: color.$white-color;
+        height: auto;
+
+        /*CARD SHADOW*/
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__card-tittle {
+        display: block;
+        text-align: center;
+        padding-top: 30px;
+        margin: 0px;
+        padding-bottom: 0px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: color.$black-color;
+    }
+
+    &__card-job {
+        display: block;
+        padding-top: 10px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: color.$grey-color;
+    }
+
+}
+
+.socialmedialist {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 16px 32px 30px 32px;
+
+    &__items {
+        position: relative;
+        height: 44px;
+        width: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 100%;
+
+        &:hover,
+        :focus {
+            background-color: color.$highlight;
+            cursor: pointer;
+        }
+    }
+
+    &__icon-ig {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            fill: color.$white-color;
+        }
+    }
+
+    &__icon-twitter {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            fill: color.$white-color;
+        }
+    }
+
+    &__icon-fb {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            fill: color.$white-color;
+        }
+    }
+
+    &__icon-linkedin {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 20px;
+        height: 20px;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            fill: color.$white-color;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@use "../utils/variables.scss" as var;
+@use "../utils/variables.scss" as color;
+
+.advantages {
+    padding: var.$inner-padding;
+    padding-bottom: 0;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__items {
+        width: 270px;
+    }
+
+    &__icon-box {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        background-color: color.$grey-bg;
+    }
+
+    &__icon-antena {
+        width: 65px;
+        height: 70px;
+    }
+
+    &__article-tittle {
+        text-align: start;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 10px;
+        color: color.$black-color;
+    }
+
+    &__article-description {
+        text-align: left;
+    }
+
+    &__icon-clock {
+        width: 66px;
+        height: 70px;
+    }
+
+    &__icon-diagram {
+        width: 75px;
+        height: 64px;
+    }
+
+    &__icon-astronaut {
+        width: 70px;
+        height: 70px;
+    }
+}

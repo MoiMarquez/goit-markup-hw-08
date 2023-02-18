@@ -1,0 +1,146 @@
+@use "../utils/variables.scss" as color;
+@use "../utils/variables.scss" as var;
+
+.clients {
+    padding: 59px 0 94px 0;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__tittle {
+        text-align: center;
+        color: color.$black-color;
+        padding-bottom: 44px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__items {
+        position: relative;
+        color: color.$cards-icon-color;
+        width: 170px;
+        height: 81px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+
+        &:hover,
+        :focus {
+            border-color: color.$highlight;
+        }
+    }
+
+    &__icon-yaco {
+        position: absolute;
+        align-items: center;
+        width: 41px;
+        height: 47px;
+        top: 25%;
+        left: 38%;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            cursor: pointer;
+            fill: color.$highlight;
+        }
+    }
+
+    &__icon-company {
+        position: absolute;
+        align-items: center;
+        width: 41px;
+        height: 47px;
+        top: 25%;
+        left: 38%;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            cursor: pointer;
+            fill: color.$highlight;
+        }
+    }
+
+    &__icon-company2 {
+        position: absolute;
+        align-items: center;
+        width: 40px;
+        height: 52px;
+        top: 20%;
+        left: 38%;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            cursor: pointer;
+            fill: color.$highlight;
+        }
+    }
+
+    &__icon-foster {
+        position: absolute;
+        align-items: center;
+        width: 84px;
+        height: 40px;
+        top: 25%;
+        left: 31%;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            cursor: pointer;
+            fill: color.$highlight;
+        }
+    }
+
+    &__icon-brand {
+        position: absolute;
+        align-items: center;
+        width: 62px;
+        height: 45px;
+        top: 25%;
+        left: 30%;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            cursor: pointer;
+            fill: color.$highlight;
+        }
+    }
+
+
+    &__icon-tagline {
+        position: absolute;
+        align-items: center;
+        width: 94px;
+        height: 44px;
+        top: 25%;
+        left: 25%;
+        fill: color.$cards-icon-color;
+
+        &:hover,
+        :focus {
+            cursor: pointer;
+            fill: color.$highlight;
+        }
+    }
+
+}
