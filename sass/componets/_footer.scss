@@ -195,3 +195,9 @@
         fill: color.$white-color;
     }
 }
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .main-page {
+        max-width: 768px;
+    }
+}

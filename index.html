@@ -25,15 +25,16 @@
 
 <body>
 	<header class="header">
-		<nav>
+		<nav class="header__nav">
 			<ul class="header__nav__links">
-				<a class="header__nav__logo" href="index.html">WebStudio</a>
-				<li><a class="header__nav__page current" href="index.html">Estudio</a></li>
-				<li><a class="header__nav__page" href="portfolio.html">Portafolio</a></li>
-				<li><a class="header__nav__page" href="contacts.html">Contactos</a></li>
+				<a class="header__nav__logo" href="index.html">Web<span
+						class="header__nav__logo__title">Studio</span></a>
+				<li><a class="header__nav__page current" href="index.html">Studio</a></li>
+				<li><a class="header__nav__page" href="portfolio.html">Portfolio</a></li>
+				<li><a class="header__nav__page" href="contacts.html">Contacts</a></li>
 			</ul>
 		</nav>
-		<aside class="header__contact list">
+		<aside class="header__contact">
 			<a class="header__contact__email" href="mailto:info@devstudio.com">
 				<svg class="icon-envelope">
 					<use href="images/icons.svg#icon-envelope"></use>
@@ -51,20 +52,20 @@
 
 	<main class="separator">
 		<section class="main-page">
-			<h1 class="main-page__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+			<h1 class="main-page__title">Effective solutions for your business</h1>
 
 			<button class="main-page__button" data-modal-open>
-				Solicite nuestro servicio
+				Request our services
 			</button>
 
 			<div class="backdrop is-hidden" data-modal>
 				<div class="modal">
 					<button class="close-button" data-modal-close>X</button>
-					<h2 class="modal-title">Deje sus datos, nos contactaremos con usted</h2>
+					<h2 class="modal-title">Leave your information and we'll call you back</h2>
 					<div class="modal-form">
 						<form name="contact-form" autocomplete="on">
 
-							<label for="full-name">
+							<label class="contact-label" for="full-name">
 								Nombre
 								<div class="modal-input-group-name">
 									<input id="full-name" class="modal-input-form name" type="text">
@@ -74,7 +75,7 @@
 								</div>
 							</label>
 
-							<label for="phone-number">
+							<label class="contact-label" for="phone-number">
 								Teléfono
 								<div class="modal-input-group-phone">
 									<input id="phone-number" class="modal-input-form phone-number" type="tel">
@@ -84,7 +85,7 @@
 								</div>
 							</label>
 
-							<label for="e-mail">
+							<label class="contact-label" for="e-mail">
 								E-mail
 								<div class="modal-input-group-email">
 									<input id="e-mail" class="modal-input-form email" type="email">
@@ -94,7 +95,7 @@
 								</div>
 							</label>
 
-							<label for="comments">
+							<label class="contact-label" for="comments">
 								Comentarios
 								<textarea id="comments" class="modal-input-form comments"
 									placeholder="Introduzca el texto"></textarea>

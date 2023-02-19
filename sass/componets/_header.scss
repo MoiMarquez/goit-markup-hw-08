@@ -6,14 +6,12 @@
     align-items: center;
     padding: 24px 0;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 
     &__nav {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        gap: 80px;
-
 
         &__links {
             display: flex;
@@ -21,7 +19,7 @@
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-            gap: 5px 80px;
+            gap: 5px 50px;
             font-family: "Roboto";
             font-style: normal;
             font-weight: 500;
@@ -29,6 +27,7 @@
             line-height: 16px;
             letter-spacing: 0.02em;
         }
+
 
         &__page {
             color: color.$grey-color;
@@ -54,6 +53,11 @@
             letter-spacing: 0.03em;
             text-decoration: none;
             color: color.$highlight;
+            margin-right: 43px;
+
+            &__title {
+                color: black;
+            }
         }
     }
 }
@@ -63,7 +67,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 
     &__email {
         font-style: normal;
@@ -92,6 +96,7 @@
     width: 15px;
     height: 15px;
     fill: color.$grey-color;
+    margin-right: 10px;
 }
 
 .header__contact__email:hover,
@@ -114,4 +119,37 @@
 .icon-phone:focus {
     fill: color.$highlight;
     color: color.$highlight;
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .header {
+        max-width: 768px;
+        margin: 0;
+        background-color: red;
+        padding: 21px 15px;
+
+        &__nav {
+            display: flex;
+            justify-content: flex-start;
+            padding: 4px 0px;
+
+            &__links {
+                gap: 50;
+                background-color: aqua;
+            }
+
+            &__logo {
+                gap: 93px;
+            }
+        }
+
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            max-width: 164px;
+            align-items: start;
+            gap: 10px;
+            background-color: aquamarine;
+        }
+    }
 }
