@@ -26,6 +26,7 @@
             border-radius: 4px;
             border: 0;
             padding: 0 20px 0 20px;
+            height: 38px;
 
             font-family: "Roboto";
             font-style: normal;
@@ -150,4 +151,62 @@
 .portfolio-card__items:hover .portfolio-card__overflow-box,
 .portfolio-card__transition-box:hover .portfolio-card__overflow-box {
     transform: translateY(0%);
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .portfolio {
+        max-width: 768px;
+
+        &__container {
+            padding: 0 15px;
+        }
+
+        &__button-list {
+            padding: 60px 0 30px 0;
+            margin: 0 auto;
+            width: 611px;
+        }
+
+        &__button-item {
+            padding: 6px 0;
+            justify-content: space-between;
+        }
+
+    }
+
+    .portfolio-card {
+        max-width: 768px;
+
+        &__items {
+            width: 354px;
+        }
+
+        &__transition-box {
+            width: 354px;
+        }
+
+        img {
+            width: 354px;
+        }
+
+        &__overflow-box {
+            width: 354px;
+            height: 284px;
+            transform: translatey(111%);
+            padding: 49px 24px;
+        }
+
+        &__description {
+            margin: 0;
+            width: 306px;
+            height: 196px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.03em
+        }
+
+    }
+
+
 }

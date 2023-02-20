@@ -3,7 +3,7 @@
 
 .team {
     padding: var.$inner-padding;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     background-color: color.$grey-bg;
 
     &__container {
@@ -11,7 +11,7 @@
         margin: 0 auto;
     }
 
-    &__tittle {
+    &__title {
         text-align: center;
         color: color.$black-color;
         padding-bottom: 50px;
@@ -27,7 +27,7 @@
     &__list {
         display: flex;
         list-style: none;
-        gap: 37px;
+        gap: 30px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -43,7 +43,7 @@
         border-radius: 0px 0px 4px 4px;
     }
 
-    &__card-tittle {
+    &__card-title {
         display: block;
         text-align: center;
         padding-top: 30px;
@@ -76,6 +76,7 @@
     display: flex;
     list-style: none;
     gap: 10px;
+    justify-content: center;
     margin: 16px 32px 30px 32px;
 
     &__items {
@@ -146,5 +147,36 @@
         :focus {
             fill: color.$white-color;
         }
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .team {
+        padding-top: 60px;
+        max-width: 768px;
+
+        &__container {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            padding-bottom: 30px;
+        }
+
+        &__list {
+            justify-content: space-around;
+            padding: 0 15px;
+        }
+
+        &__items {
+            width: 354px;
+
+            img {
+                width: 354px;
+            }
+        }
+
+
     }
 }

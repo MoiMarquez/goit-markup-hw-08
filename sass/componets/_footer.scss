@@ -53,7 +53,7 @@
         padding-left: 70px;
     }
 
-    &__tittle {
+    &__title {
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -127,7 +127,7 @@
         margin: 12px 0px 0px 93px;
     }
 
-    &__right-tittle {
+    &__right-title {
         font-family: "Roboto";
         font-style: normal;
         font-weight: 700;
@@ -197,7 +197,86 @@
 }
 
 @media screen and (min-width:481px) and (max-width: 768px) {
-    .main-page {
+    .footer {
         max-width: 768px;
+        padding: 0 76px;
+
+        &__container {
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        &__left-aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 165px;
+            width: 232px;
+        }
+
+        &__logo {
+
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__address {
+            padding-top: 20px;
+            width: inherit;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &__contact {
+            width: inherit;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &__middle-aside {
+            padding: 0;
+            width: 206px;
+        }
+
+        &__title {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        &__right-aside {
+            display: flex;
+            padding-top: 54px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__right-title {
+            width: 275px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &__right-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 450px;
+            gap: 20px;
+        }
+
+        &__input {
+            width: inherit;
+        }
+
+        &__sub-text {
+            margin-right: 20px;
+        }
+
     }
 }

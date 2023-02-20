@@ -372,7 +372,6 @@ summary {
   .header {
     max-width: 768px;
     margin: 0;
-    background-color: red;
     padding: 21px 15px;
   }
   .header__nav {
@@ -382,7 +381,6 @@ summary {
   }
   .header__nav__links {
     gap: 50;
-    background-color: aqua;
   }
   .header__nav__logo {
     gap: 93px;
@@ -393,7 +391,6 @@ summary {
     max-width: 164px;
     align-items: start;
     gap: 10px;
-    background-color: aquamarine;
   }
 }
 * {
@@ -772,7 +769,7 @@ label .comments::placeholder {
   width: 65px;
   height: 70px;
 }
-.advantages__article-tittle {
+.advantages__article-title {
   text-align: start;
   font-weight: bold;
   font-size: 14px;
@@ -795,6 +792,36 @@ label .comments::placeholder {
   height: 70px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .advantages {
+    padding: 94px 0 94px 0;
+    padding-bottom: 60px;
+  }
+  .advantages__container {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+  .advantages__list {
+    justify-content: space-evenly;
+  }
+  .advantages__items {
+    width: 354px;
+    flex-wrap: wrap;
+  }
+  .advantages__icon-box {
+    width: inherit;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .advantages__article-title {
+    flex-wrap: wrap;
+    width: inherit;
+  }
+  .advantages__article-description {
+    flex-wrap: wrap;
+    width: inherit;
+  }
+}
 .us {
   padding: 94px 0 94px 0;
   padding-bottom: 0;
@@ -848,16 +875,22 @@ label .comments::placeholder {
   opacity: 100%;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .us {
+    display: none;
+    max-width: 768px;
+  }
+}
 .team {
   padding: 94px 0 94px 0;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 .team__container {
   max-width: 1200px;
   margin: 0 auto;
 }
-.team__tittle {
+.team__title {
   text-align: center;
   color: #212121;
   padding-bottom: 50px;
@@ -872,7 +905,7 @@ label .comments::placeholder {
 .team__list {
   display: flex;
   list-style: none;
-  gap: 37px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -883,7 +916,7 @@ label .comments::placeholder {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__card-tittle {
+.team__card-title {
   display: block;
   text-align: center;
   padding-top: 30px;
@@ -911,6 +944,7 @@ label .comments::placeholder {
   display: flex;
   list-style: none;
   gap: 10px;
+  justify-content: center;
   margin: 16px 32px 30px 32px;
 }
 .socialmedialist__items {
@@ -974,6 +1008,29 @@ label .comments::placeholder {
   fill: #FFFFFF;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .team {
+    padding-top: 60px;
+    max-width: 768px;
+  }
+  .team__container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .team__title {
+    padding-bottom: 30px;
+  }
+  .team__list {
+    justify-content: space-around;
+    padding: 0 15px;
+  }
+  .team__items {
+    width: 354px;
+  }
+  .team__items img {
+    width: 354px;
+  }
+}
 .clients {
   padding: 59px 0 94px 0;
 }
@@ -981,7 +1038,7 @@ label .comments::placeholder {
   max-width: 1200px;
   margin: 0 auto;
 }
-.clients__tittle {
+.clients__title {
   text-align: center;
   color: #212121;
   padding-bottom: 44px;
@@ -1099,6 +1156,31 @@ label .comments::placeholder {
   fill: rgb(33, 150, 243);
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .clients {
+    padding: 60px 15px;
+    max-width: 768px;
+  }
+  .clients__container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .clients__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .clients__list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .clients__items {
+    width: 226px;
+  }
+}
 .footer {
   background: #2f303a;
 }
@@ -1140,7 +1222,7 @@ label .comments::placeholder {
 .footer__middle-aside {
   padding-left: 70px;
 }
-.footer__tittle {
+.footer__title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1204,7 +1286,7 @@ label .comments::placeholder {
 .footer__right-aside {
   margin: 12px 0px 0px 93px;
 }
-.footer__right-tittle {
+.footer__right-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -1264,8 +1346,73 @@ label .comments::placeholder {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .main-page {
+  .footer {
     max-width: 768px;
+    padding: 0 76px;
+  }
+  .footer__container {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .footer__left-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 165px;
+    width: 232px;
+  }
+  .footer__logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .footer__address {
+    padding-top: 20px;
+    width: inherit;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .footer__contact {
+    width: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .footer__middle-aside {
+    padding: 0;
+    width: 206px;
+  }
+  .footer__title {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer__right-aside {
+    display: flex;
+    padding-top: 54px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__right-title {
+    width: 275px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .footer__right-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    gap: 20px;
+  }
+  .footer__input {
+    width: inherit;
+  }
+  .footer__sub-text {
+    margin-right: 20px;
   }
 }
 .separator::before {
@@ -1292,6 +1439,7 @@ label .comments::placeholder {
   border-radius: 4px;
   border: 0;
   padding: 0 20px 0 20px;
+  height: 38px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1379,6 +1527,51 @@ label .comments::placeholder {
 .portfolio-card__items:hover .portfolio-card__overflow-box,
 .portfolio-card__transition-box:hover .portfolio-card__overflow-box {
   transform: translateY(0%);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .portfolio {
+    max-width: 768px;
+  }
+  .portfolio__container {
+    padding: 0 15px;
+  }
+  .portfolio__button-list {
+    padding: 60px 0 30px 0;
+    margin: 0 auto;
+    width: 611px;
+  }
+  .portfolio__button-item {
+    padding: 6px 0;
+    justify-content: space-between;
+  }
+  .portfolio-card {
+    max-width: 768px;
+  }
+  .portfolio-card__items {
+    width: 354px;
+  }
+  .portfolio-card__transition-box {
+    width: 354px;
+  }
+  .portfolio-card img {
+    width: 354px;
+  }
+  .portfolio-card__overflow-box {
+    width: 354px;
+    height: 284px;
+    transform: translatey(111%);
+    padding: 49px 24px;
+  }
+  .portfolio-card__description {
+    margin: 0;
+    width: 306px;
+    height: 196px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

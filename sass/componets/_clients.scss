@@ -9,7 +9,7 @@
         margin: 0 auto;
     }
 
-    &__tittle {
+    &__title {
         text-align: center;
         color: color.$black-color;
         padding-bottom: 44px;
@@ -143,4 +143,34 @@
         }
     }
 
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .clients {
+        padding: 60px 15px;
+        max-width: 768px;
+
+        &__container {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        &__list {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &__items {
+            width: 226px;
+        }
+    }
 }

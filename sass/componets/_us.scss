@@ -60,3 +60,10 @@
         opacity: 100%;
     }
 }
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .us {
+        display: none;
+        max-width: 768px;
+    }
+}

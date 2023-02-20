@@ -37,7 +37,7 @@
         height: 70px;
     }
 
-    &__article-tittle {
+    &__article-title {
         text-align: start;
         font-weight: bold;
         font-size: 14px;
@@ -62,5 +62,42 @@
     &__icon-astronaut {
         width: 70px;
         height: 70px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .advantages {
+        padding: var.$inner-padding;
+        padding-bottom: 60px;
+
+        &__container {
+            max-width: 768px;
+            padding: 0 15px;
+        }
+
+        &__list {
+            justify-content: space-evenly;
+        }
+
+        &__items {
+            width: 354px;
+            flex-wrap: wrap;
+        }
+
+        &__icon-box {
+            width: inherit;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        &__article-title {
+            flex-wrap: wrap;
+            width: inherit;
+        }
+
+        &__article-description {
+            flex-wrap: wrap;
+            width: inherit;
+        }
     }
 }
