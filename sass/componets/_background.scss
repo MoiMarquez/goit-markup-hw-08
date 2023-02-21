@@ -88,8 +88,6 @@ body {
 
 }
 
-
-
 .backdrop {
     position: fixed;
     top: 0%;
@@ -374,6 +372,36 @@ label .comments::placeholder {
 
         .agreement-box {
             padding-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-page {
+        background-size: cover;
+        height: 400px;
+        max-width: 480px;
+
+        &__title {
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+
+            text-align: center;
+            letter-spacing: 0.06em;
+            width: 70%;
+        }
+
+        &__button {
+            width: 200px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 30px;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
         }
     }
 }

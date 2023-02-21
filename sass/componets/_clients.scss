@@ -164,13 +164,45 @@
         &__list {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 21px;
             flex-wrap: wrap;
             justify-content: space-around;
         }
 
         &__items {
             width: 226px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .clients {
+        padding: 60px 15px;
+        max-width: 480px;
+        width: 480px;
+
+        &__container {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 33px;
+            padding-bottom: 30px;
+        }
+
+        &__list {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__items {
+            width: 210px;
         }
     }
 }

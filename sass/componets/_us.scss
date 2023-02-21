@@ -67,3 +67,10 @@
         max-width: 768px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .us {
+        display: none;
+        max-width: 768px;
+    }
+}

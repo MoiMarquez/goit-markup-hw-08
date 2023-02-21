@@ -22,15 +22,16 @@
 
 <body>
 	<header class="header">
-		<nav>
+		<nav class="header__nav">
 			<ul class="header__nav__links">
-				<a class="header__nav__logo" href="index.html">WebStudio</a>
-				<li><a class="header__nav__page current" href="index.html">Estudio</a></li>
-				<li><a class="header__nav__page" href="portfolio.html">Portafolio</a></li>
-				<li><a class="header__nav__page" href="contacts.html">Contactos</a></li>
+				<a class="header__nav__logo" href="index.html">Web<span
+						class="header__nav__logo__title">Studio</span></a>
+				<li><a class="header__nav__page current" href="index.html">Studio</a></li>
+				<li><a class="header__nav__page" href="portfolio.html">Portfolio</a></li>
+				<li><a class="header__nav__page" href="contacts.html">Contacts</a></li>
 			</ul>
 		</nav>
-		<aside class="header__contact list">
+		<aside class="header__contact">
 			<a class="header__contact__email" href="mailto:info@devstudio.com">
 				<svg class="icon-envelope">
 					<use href="images/icons.svg#icon-envelope"></use>
@@ -43,6 +44,60 @@
 				</svg>
 				+52 55 5529 6000</a>
 		</aside>
+		<aside class="header__menu">
+			<a class="header__menu-logo" href="index.html">Web<span class="header__nav__logo__title">Studio</span></a>
+			<button class="header__menu-toggle js-open-menu" aria-expanded="false" aria-controls="modal">
+				<svg class="header__icon-menu">
+					<use href="images/icons.svg#menu"></use>
+				</svg>
+			</button>
+		</aside>
+
+		<section class="header__menu-container js-menu-container" id="mobile-menu"">
+				<a class=" header__menu-close js-close-menu" aria-expanded="false" aria-controls="modal">
+			<svg class="header__icon-close">
+				<use href="images/icons.svg#close"></use>
+			</svg>
+			</a>
+			<section class="menu-container is-open" id="mobile-menu"></section>
+			<ul class="header__menu-links">
+				<li class="header__items-space"><a class="header__items current" href="index.html">Studio</a></li>
+				<li class="header__items-space"><a class="header__items" href="portfolio.html">Portfolio</a></li>
+				<li class="header__items-space"><a class="header__items" href="contacts.html">Contacts</a></li>
+
+				<li class="header__items-space">
+					<a class="header__items-phone" href="tel:+525555296000">
+						+52 55 5529 6000</a>
+				</li>
+				<li class="header__items-space"><a class="header__items-email" href="mailto:info@devstudio.com">
+						info@devstudio.com</a>
+				</li>
+			</ul>
+
+			<ul class="header__media-links">
+				<li class="header__media-items">
+					<a href="https://www.instagram.com/">Instagram</a>
+				</li>
+				<li class="header__media-separation">
+					<img src="images/Line.png" alt="separation">
+				</li>
+				<li class="header__media-items">
+					<a href="https://twitter.com/">Twitter</a>
+				</li>
+				<li class="header__media-separation">
+					<img src="images/Line.png" alt="separation">
+				</li>
+				<li class="header__media-items">
+					<a href="https://www.facebook.com/">Facebook</a>
+				</li>
+				<li class="header__media-separation">
+					<img src="images/Line.png" alt="separation">
+				</li>
+				<li class="header__media-items">
+					<a href="https://www.instagram.com/">LinkedIn</a>
+				</li>
+			</ul>
+		</section>
 	</header>
 
 	<main class="separator">
@@ -50,16 +105,16 @@
 			<div class="portfolio__container">
 				<ul class="portfolio__button-list">
 					<li class="portfolio__button-item">
-						<button class="portfolio__button-item__child" type="button">Todo</button>
+						<button class="portfolio__button-item__child" type="button">All</button>
 					</li>
 					<li class="portfolio__button-item">
-						<button class="portfolio__button-item__child" type="button">Sitios-web</button>
+						<button class="portfolio__button-item__child" type="button">Web-sites</button>
 					</li>
 					<li class="portfolio__button-item">
-						<button class="portfolio__button-item__child" type="button">Aplicaciones</button>
+						<button class="portfolio__button-item__child" type="button">Apps</button>
 					</li>
 					<li class="portfolio__button-item">
-						<button class="portfolio__button-item__child" type="button">Diseño</button>
+						<button class="portfolio__button-item__child" type="button">Design</button>
 					</li>
 					<li class="portfolio__button-item">
 						<button class="portfolio__button-item__child" type="button">Marketing</button>
@@ -71,15 +126,14 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg1.jpg" alt="Tecnoduck" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
 							<h3 class="portfolio-card__tittle">Tecnoduck</h3>
-							<p class="portfolio-card__filter-text">Sitio-web</p>
+							<p class="portfolio-card__filter-text">Web-site</p>
 						</a>
 					</li>
 
@@ -87,15 +141,14 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg2.jpg" alt="Basket" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
 							<h3 class="portfolio-card__tittle">Póster de Nueva Orleans vs Estrella Dorada</h3>
-							<p class="portfolio-card__filter-text">Sitio-web</p>
+							<p class="portfolio-card__filter-text">Design</p>
 						</a>
 					</li>
 
@@ -103,15 +156,14 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg3.jpg" alt="Restaurant" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
-							<h3 class="portfolio-card__tittle">Restaurante de Mariscos</h3>
-							<p class="portfolio-card__filter-text">Aplicaciones</p>
+							<h3 class="portfolio-card__tittle">Seafood Restaurant</h3>
+							<p class="portfolio-card__filter-text">Apps</p>
 						</a>
 					</li>
 
@@ -119,14 +171,13 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg4.jpg" alt="Headset" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
-							<h3 class="portfolio-card__tittle">Proyecto Prime</h3>
+							<h3 class="portfolio-card__tittle">Project Prime</h3>
 							<p class="portfolio-card__filter-text">Marketing</p>
 						</a>
 					</li>
@@ -135,15 +186,14 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg5.jpg" alt="Boxes" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
-							<h3 class="portfolio-card__tittle">Proyecto Cajas</h3>
-							<p class="portfolio-card__filter-text">Aplicaciones</p>
+							<h3 class="portfolio-card__tittle">Project Boxes</h3>
+							<p class="portfolio-card__filter-text">Apps</p>
 						</a>
 					</li>
 
@@ -151,15 +201,14 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg6.jpg" alt="Mac" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
-							<h3 class="portfolio-card__tittle">La inspiración no tiene límites</h3>
-							<p class="portfolio-card__filter-text">Sitio-web</p>
+							<h3 class="portfolio-card__tittle">Inspiration has no Borders</h3>
+							<p class="portfolio-card__filter-text">Web-site</p>
 						</a>
 					</li>
 
@@ -167,15 +216,14 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg7.jpg" alt="Book" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
-							<h3 class="portfolio-card__tittle">Edición Limitada</h3>
-							<p class="portfolio-card__filter-text">Diseño</p>
+							<h3 class="portfolio-card__tittle">Limited Edition</h3>
+							<p class="portfolio-card__filter-text">Design</p>
 						</a>
 					</li>
 
@@ -183,14 +231,13 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg8.jpg" alt="Label" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
-							<h3 class="portfolio-card__tittle">Proyecto LAB</h3>
+							<h3 class="portfolio-card__tittle">LAB Project</h3>
 							<p class="portfolio-card__filter-text">Marketing</p>
 						</a>
 					</li>
@@ -199,15 +246,14 @@
 						<div class="portfolio-card__transition-box">
 							<img class="translation-bg" src="images/gridimg9.jpg" alt="App" width="370" />
 							<div class="portfolio-card__overflow-box">
-								<p class="portfolio-card__description">Tecnoduck es una plataforma de distribución
-									de coronavirus de última generación. Las compañías usan esta
-									plataforma para el espionaje digital y los ataques a los servidores
-									seguros de la competencia.</p>
+								<p class="portfolio-card__description">Technoduck is a state-of-the-art
+									coronavirus distribution platform. Companies use this platform for
+									digital espionage and attacks on competitors' secure servers.</p>
 							</div>
 						</div>
 						<a href="#" class="link">
-							<h3 class="portfolio-card__tittle">Negocio en Crecimento</h3>
-							<p class="portfolio-card__filter-text">Aplicaciones</p>
+							<h3 class="portfolio-card__tittle">Growing Business</h3>
+							<p class="portfolio-card__filter-text">Apps</p>
 						</a>
 					</li>
 				</ul>
@@ -218,10 +264,9 @@
 	<footer class="footer">
 		<div class="footer__container">
 			<div class="footer__left-aside">
-				<a class="footer__logo" href="#">WebStudio</a>
+				<a class="footer__logo" href="#">Web<span class="footer__logo__title">Studio</span></a>
 				<address class="footer__address">
-					Calz. Ticomán 500, <br />
-					Ciudad de México, CDMX, México <br />
+					695 Park Ave, NY 10065, USA
 					<a class="footer__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
 					<br />
 					<a class="footer__contact" href="tel:+525555296000">+52 55 5529 6000</a>
@@ -229,7 +274,7 @@
 			</div>
 
 			<aside class="footer__middle-aside">
-				<h2 class="footer__title">ENCUENTRENOS EN</h2>
+				<h2 class="footer__title">FIND US ON</h2>
 
 				<ul class="footer__list">
 					<li class="footer__items">
@@ -259,11 +304,11 @@
 				</ul>
 			</aside>
 			<aside class="footer__right-aside">
-				<H2 class="footer__right-title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</H2>
+				<H2 class="footer__right-title">Subscribe to the newsletter</H2>
 				<div class="footer__right-div">
-					<input class="footer__input" type="text" placeholder="Correo electrónico">
+					<input class="footer__input" type="text" placeholder="E-mail">
 					<button class="footer__button">
-						<p class="footer__sub-text">Suscríbase</p>
+						<p class="footer__sub-text">Subscribe</p>
 						<svg class="footer__icon-telegram">
 							<use href="images/icons.svg#icon-telegram"></use>
 						</svg>
@@ -272,6 +317,12 @@
 			</aside>
 		</div>
 	</footer>
+	<!--to fix event listener error-->
+	<section class="maine-page" data-modal-open data-modal-close data-modal is-hidden>
+	</section>
+
+	<!-- JS -->
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
