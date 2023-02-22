@@ -331,6 +331,7 @@ summary {
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
+  width: 100%;
 }
 .header__contact__email {
   font-style: normal;
@@ -383,19 +384,22 @@ summary {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu-logo {
     display: none;
+    width: 100%;
   }
   .header {
     max-width: 768px;
     margin: 0;
-    padding: 21px 15px;
+    width: 100%;
   }
   .header__nav {
     display: flex;
     justify-content: flex-start;
     padding: 4px 0px;
+    width: 100%;
   }
   .header__nav__links {
-    gap: 50;
+    gap: 40;
+    width: 100%;
   }
   .header__nav__logo {
     gap: 93px;
@@ -404,11 +408,15 @@ summary {
     display: flex;
     flex-direction: column;
     max-width: 164px;
+    width: 100%;
     align-items: start;
     gap: 10px;
   }
 }
 @media screen and (max-width: 480px) {
+  * {
+    max-width: 480px;
+  }
   .header__nav {
     display: none;
   }
@@ -464,6 +472,9 @@ summary {
     z-index: 3;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+  }
+  .header .inactive {
+    display: none;
   }
   .header .is-open {
     transform: translateX(0);
@@ -1008,7 +1019,7 @@ label .comments::placeholder {
     justify-content: space-evenly;
   }
   .advantages__items {
-    width: 450px;
+    width: 100%;
     flex-wrap: wrap;
   }
   .advantages__icon-box {
@@ -1247,7 +1258,7 @@ label .comments::placeholder {
     max-width: 768px;
   }
   .team__container {
-    max-width: 768px;
+    max-width: 480px;
     margin: 0 auto;
   }
   .team__title {
@@ -1258,10 +1269,10 @@ label .comments::placeholder {
     padding: 0 15px;
   }
   .team__items {
-    width: 450px;
+    width: auto;
   }
   .team__items img {
-    width: 450px;
+    width: 100%;
   }
 }
 .clients {
@@ -1411,14 +1422,13 @@ label .comments::placeholder {
     justify-content: space-around;
   }
   .clients__items {
-    width: 226px;
+    width: 30%;
   }
 }
 @media screen and (max-width: 480px) {
   .clients {
     padding: 60px 15px;
     max-width: 480px;
-    width: 480px;
   }
   .clients__container {
     max-width: 480px;
@@ -1438,7 +1448,7 @@ label .comments::placeholder {
     justify-content: space-between;
   }
   .clients__items {
-    width: 210px;
+    width: 45%;
   }
 }
 .footer {
@@ -1729,6 +1739,7 @@ label .comments::placeholder {
   }
   .footer__right-aside {
     margin: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1736,9 +1747,17 @@ label .comments::placeholder {
   }
   .footer__right-div {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .footer__input {
+    width: 90%;
+    margin: 0;
+  }
+  .footer__input::placeholder {
+    padding-left: 10px;
   }
   .footer__button {
     margin-top: 20px;

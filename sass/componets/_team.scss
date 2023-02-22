@@ -186,7 +186,7 @@
         max-width: 768px;
 
         &__container {
-            max-width: 768px;
+            max-width: 480px;
             margin: 0 auto;
         }
 
@@ -200,10 +200,10 @@
         }
 
         &__items {
-            width: 450px;
+            width: auto;
 
             img {
-                width: 450px;
+                width: 100%;
             }
         }
 
